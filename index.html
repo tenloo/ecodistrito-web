@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecodistrito — Condominios sustentables en Tegucigalpa</title>
+<meta name="description" content="Los únicos condominios que personalizas a tu estilo, en la mejor zona de Tegucigalpa. Agua potable 24/7, seguridad privada, financiamiento con todos los bancos.">
+<meta property="og:title" content="Ecodistrito — Compra y personaliza tu estilo de vida">
+<meta property="og:description" content="Condominios sustentables y personalizables en Tegucigalpa. Cuotas desde $430 mensuales.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{font-family:'Inter',system-ui,sans-serif;color:#14261C;background:#ffffff;-webkit-font-smoothing:antialiased;}
+a{color:#14432A;text-decoration:none;}
+a:hover{color:#1B5E3F;}
+img{display:block;max-width:100%;}
+input,select,textarea,button{font-family:inherit;}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
+::selection{background:#CDEAC0;color:#14432A;}
+@keyframes ecdFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (max-width:1024px){
+  [data-ecd="nav"]{display:none !important;}
+  [data-ecd="ham"]{display:inline-flex !important;}
+}
+@media (max-width:1180px){
+  [data-ecd="call-label"]{display:none !important;}
+}
+@media (min-width:1025px){
+  [data-ecd="mobile-menu"]{display:none !important;}
+}
+@media (max-width:620px){
+  [data-ecd="hero-btns"]{flex-direction:column;align-items:stretch !important;}
+  [data-ecd="hero-btns"] a{justify-content:center;}
+}
+[data-ecd="serv-grid"]{grid-template-columns:repeat(3,1fr) !important;}
+@media (max-width:860px){[data-ecd="serv-grid"]{grid-template-columns:1fr !important;}}
+[data-marquee]:hover [data-marquee-track]{animation-play-state:paused;}
+</style>
+</head>
+<body>
+<div style="overflow-x:hidden;position:relative;">
+
+<!-- ============ HEADER ============ -->
+<header id="ecd-header" data-screen-label="Header" style="position:fixed;top:0;left:0;right:0;z-index:60;background:#ffffff;transition:box-shadow .3s ease,background .3s ease;">
+  <div style="max-width:1280px;margin:0 auto;padding:14px clamp(18px,4vw,40px);display:flex;align-items:center;justify-content:space-between;gap:20px;">
+    <!-- logo -->
+    <a data-nav="inicio" href="#inicio" style="display:flex;flex-direction:column;gap:6px;">
+      <svg viewBox="0 0 7620.29 877.32" role="img" aria-label="Ecodistrito" style="height:23px;width:auto;display:block;fill:#14432A;"><path d="M7620.29,349.36v184.79c-32.55,177.07-173.82,316.24-351.98,343.18h-131.99c-207.26-36.3-351.8-206.98-355.25-422.89-2.09-130.68,42.66-254.16,135.85-339.32,96.58-88.25,229.56-124.86,360.88-102.72,179.08,30.2,308.9,164.92,342.49,336.96ZM7216.82,802.81c134.9-4.97,244.22-81.56,291.75-205.24,38.95-101.35,38.62-217.07-2.97-317.59-52.64-127.23-171.84-198.97-307.65-197.22-148.44,1.92-272.08,93.49-311.71,237.32-25.16,91.32-23.49,188.88,10.78,277.11,51.66,133,174.27,210.98,319.81,205.62Z"></path><path d="M1037.38.16c151.6,15.89,285.61,100.43,339.63,256.99l-100.49-1.32c-47.44-116.71-151.84-177.54-273.3-182.72-144.85-6.18-272.63,71.86-321.14,210.48-34.44,98.4-34.34,207.37,2.04,304.99,51.74,138.82,182.28,213.76,328.1,204.04,117.68-7.84,219.12-67.68,264.28-180.76l100.58.47c-48.04,135.22-157.9,220.02-295.8,247.51-167.4,33.37-341.18-25.24-437.11-169.26-89.47-134.32-98.68-305.68-34.42-452.62C669.19,101.99,792.18,20.19,933.81.12l103.57.03Z"></path><path d="M4134.52,874.48l-111.79-.03c-121.63-15.93-225.51-96.78-231.51-224.28l89.56-.7c12.37,85.7,75.23,145.78,160.4,153.67,49.42,4.58,104.05.88,146.07-22.38,58.53-32.4,84.38-89.12,78.48-152.55-5.14-55.3-48.97-104.52-110.28-123.28l-195.09-59.71c-50.45-15.44-101.07-44.13-129.71-90.33-57.31-92.47-39.48-221.2,49.15-287.62,99.21-74.35,234.55-80.14,343.63-26.7,70.58,34.58,113.34,99.16,122.89,174.08l-92.13-.66c-30.8-120.89-165.25-160.09-273.8-117.87-62.97,24.49-96.54,78.93-95.62,141.04.85,57.17,38.67,112.71,99.49,132.15l206.06,65.88c55.37,17.7,109.08,48.51,137.39,101.02,38.95,72.26,34.44,159.87-12.06,231.11-37.02,56.72-106.18,96.31-181.14,107.17Z"></path><polygon points="0 859.72 0 6.18 439.08 6.5 439.41 78.82 80.58 78.35 80.83 395.4 403.54 395.74 403.15 466.32 80.98 466.62 80.99 789.19 439.49 789 439.97 860.12 0 859.72"></polygon><path d="M1978.86,0c102.93,13.62,196.78,54.76,267.47,136.38l-47.42,73.3c-71.88-101.49-185.25-145.16-307.86-133.29-156.03,15.11-270,135.54-290.03,291.21-15.44,120,7.05,241.67,92.28,330.21,94.6,98.28,237.48,119.62,364.92,72.92l72.84,50.69c-150.8,75.01-324.68,62.87-456.1-34.84-122.97-91.42-174.3-235.93-165.95-386.15C1520.68,190.08,1670.29,26.39,1875.75.35l103.11-.35Z"></path><polygon points="2551.83 877.32 2534.23 877.32 2534.37 6.84 2551.98 23.69 2551.83 877.32"></polygon><path d="M3327.03,137.05c146.01,150.69,149.73,445.54,13.71,597.27-154.97,172.88-381.59,129.03-605.48,134.28l-.07-851.52c218.13-.59,434.99-31.74,591.83,119.96ZM3340.02,553.48c15.85-72.79,14.67-142.48,1.7-210.56-27.85-146.17-145.38-249.29-294.58-251.61l-225.73-3.5-.04,710.05c86.02-.02,164.19,2.33,243.78-5.41,135.69-13.2,245.08-102.22,274.86-238.97Z"></path><path d="M5636.17,871.71l-213.05-358.14-156.93-.27.26,352.69-85.87,1.65-.06-849.89c108.71-3.99,218.04-4.74,327.61,2.94,132.28,17.01,225.03,116.13,218.11,249.5.21,121.31-79.73,216.4-208.73,236.26l218.34,360.74-99.68,4.52ZM5639.59,257.45c-2.43-95.6-64-164.03-157.92-165.46l-215.43-3.28-.08,354.47,216.76-3.2c98.1-1.45,159.17-84.72,156.68-182.53Z"></path><path d="M2098.81,765.58c-35.27-29.1-63.14-78.02-83.52-126.74-59.52-188.61,140.99-320.48,251.79-476.63,141.82,217.82,129.46,470.52-96.76,635-34.34-149.93-11.19-294.06,56.26-431.46-90.42,108.89-109.83,245.64-127.78,399.83Z"></path><polygon points="6407.42 866.25 6321.19 868.01 6321.68 88.59 6084.48 88.05 6084.56 15.71 6642.94 15.36 6643.21 87.99 6407.13 88.15 6407.42 866.25"></polygon><polygon points="4810.01 867.38 4723.4 867.63 4723.47 88.06 4486.69 88.26 4487.55 15.35 5042.92 15.21 5045.35 88.4 4810.06 87.64 4810.01 867.38"></polygon><rect x="3188.61" y="399.59" width="851.53" height="86.33" transform="translate(3171.3132 4057.0972) rotate(-89.9951)"></rect><rect x="5865.91" y="16.99" width="86.05" height="851.54"></rect></svg>
+    </a>
+    <!-- nav -->
+    <nav data-ecd="nav" style="display:flex;align-items:center;gap:34px;">
+      <a data-nav="inicio" href="#inicio" style="font-weight:500;font-size:15px;color:#14261C;">Inicio</a>
+      <a data-nav="nosotros" href="#nosotros" style="font-weight:500;font-size:15px;color:#14261C;">Sobre nosotros</a>
+      <a data-nav="condominios" href="#condominios" style="font-weight:500;font-size:15px;color:#14261C;">Condominios</a>
+      <a data-nav="amenidades" href="#amenidades" style="font-weight:500;font-size:15px;color:#14261C;">Amenidades</a>
+      <a data-nav="contacto" href="#contacto" style="font-weight:500;font-size:15px;color:#14261C;">Contacto</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a id="ecd-call" href="tel:+50494544389" style="display:inline-flex;align-items:center;gap:10px;background:#14432A;color:#ffffff;padding:11px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:background .25s ease;" style-hover="background:#1B5E3F;">
+        <span style="width:30px;height:30px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"></path></svg>
+        </span>
+        <span data-ecd="call-label">Llámanos</span>
+      </a>
+      <button id="ecd-ham" data-ecd="ham" aria-label="Menú" style="display:none;width:46px;height:46px;border-radius:13px;background:#CDEAC0;border:none;color:#14432A;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </div>
+  <!-- mobile menu -->
+  <div id="ecd-mobile-menu" data-ecd="mobile-menu" data-open="false" style="display:none;flex-direction:column;gap:4px;padding:10px 20px 22px;border-top:1px solid #eee;background:#ffffff;">
+    <a data-nav="inicio" href="#inicio" style="padding:12px 6px;font-weight:500;border-bottom:1px solid #f2f2f0;">Inicio</a>
+    <a data-nav="nosotros" href="#nosotros" style="padding:12px 6px;font-weight:500;border-bottom:1px solid #f2f2f0;">Sobre nosotros</a>
+    <a data-nav="condominios" href="#condominios" style="padding:12px 6px;font-weight:500;border-bottom:1px solid #f2f2f0;">Condominios</a>
+    <a data-nav="amenidades" href="#amenidades" style="padding:12px 6px;font-weight:500;border-bottom:1px solid #f2f2f0;">Amenidades</a>
+    <a data-nav="contacto" href="#contacto" style="padding:12px 6px;font-weight:500;">Contacto</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="inicio" data-screen-label="Hero" style="position:relative;">
+  <div style="position:relative;min-height:clamp(600px,92vh,880px);display:flex;align-items:center;overflow:hidden;">
+    <div data-hero-slide="" style="position:absolute;inset:0;opacity:1;transition:opacity 1.1s ease;background-image:url('assets/img/hero-aerea.jpg');background-size:cover;background-position:center;"></div>
+    <div data-hero-slide="" style="position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease;background-image:url('assets/img/hero-cancha.jpg');background-size:cover;background-position:center;"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(95deg, rgba(12,20,16,.82) 0%, rgba(12,20,16,.52) 36%, rgba(12,20,16,.14) 62%, rgba(12,20,16,0) 82%);"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(12,20,16,.34) 0%, rgba(12,20,16,0) 24%, rgba(12,20,16,0) 60%, rgba(12,20,16,.26) 100%);"></div>
+    <div style="position:relative;z-index:2;max-width:1280px;width:100%;margin:0 auto;padding:120px clamp(18px,4vw,40px) 90px;">
+      <div style="max-width:720px;">
+        <span style="display:inline-block;background:#CDEAC0;color:#14432A;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:9px 20px;border-radius:999px;">Una nueva oportunidad de invertir</span>
+        <h1 style="font-family:'Sora',sans-serif;font-weight:700;color:#ffffff;font-size:clamp(38px,6.2vw,76px);line-height:1.04;letter-spacing:-.025em;margin:24px 0 0;text-wrap:balance;">Compra y personaliza tu estilo de vida</h1>
+        <p style="color:rgba(255,255,255,.86);font-size:clamp(16px,1.5vw,19px);line-height:1.65;margin:22px 0 0;max-width:560px;">Los únicos condominios que personalizas a tu estilo, en la mejor zona de Tegucigalpa.</p>
+        <div data-ecd="hero-btns" style="display:flex;align-items:center;gap:14px;margin-top:36px;flex-wrap:wrap;">
+          <a data-nav="contacto" href="#contacto" style="display:inline-flex;align-items:center;gap:10px;background:#14432A;color:#ffffff;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.18);transition:transform .25s ease,background .25s ease,box-shadow .25s ease;" style-hover="background:#1B5E3F;transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.32);">
+            Agenda una cita
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+          </a>
+          <a data-nav="nosotros" href="#nosotros" style="display:inline-flex;align-items:center;gap:10px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;transition:transform .25s ease,background .25s ease,box-shadow .25s ease;" style-hover="background:#bfe0af;transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.24);">
+            Solicita información
+          </a>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:46px;">
+          <span data-hero-dot="" style="height:10px;width:34px;border-radius:999px;background:#CDEAC0;cursor:pointer;transition:all .3s ease;"></span>
+          <span data-hero-dot="" style="height:10px;width:10px;border-radius:999px;background:rgba(255,255,255,.5);cursor:pointer;transition:all .3s ease;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- indicador bar -->
+  <div style="max-width:1180px;margin:-64px auto 0;padding:0 clamp(18px,4vw,40px);position:relative;z-index:5;">
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;background:#ffffff;border-radius:22px;box-shadow:0 26px 60px rgba(20,38,28,.12);padding:22px clamp(10px,2vw,20px);">
+      <div data-marquee="" data-speed="42" style="overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);">
+        <div data-marquee-track="" style="display:flex;gap:14px;width:max-content;will-change:transform;">
+          <div style="flex:0 0 auto;width:222px;display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:14px;padding:14px 16px;"><span style="width:42px;height:42px;border-radius:11px;background:#ffffff;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"></path></svg></span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:#14261C;line-height:1.25;">Agua potable 24/7</span></div>
+          <div style="flex:0 0 auto;width:222px;display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:14px;padding:14px 16px;"><span style="width:42px;height:42px;border-radius:11px;background:#ffffff;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="6" rx="1.6"></rect><path d="M5 11l2-5h10l2 5"></path><circle cx="7.5" cy="17.5" r="1.1"></circle><circle cx="16.5" cy="17.5" r="1.1"></circle></svg></span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:#14261C;line-height:1.25;">+300 estacionamientos</span></div>
+          <div style="flex:0 0 auto;width:222px;display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:14px;padding:14px 16px;"><span style="width:42px;height:42px;border-radius:11px;background:#ffffff;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9.4 12l1.8 1.8 3.4-3.6"></path></svg></span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:#14261C;line-height:1.25;">Seguridad privada 24/7</span></div>
+          <div style="flex:0 0 auto;width:222px;display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:14px;padding:14px 16px;"><span style="width:42px;height:42px;border-radius:11px;background:#ffffff;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"></path><path d="M17 8h4v4"></path></svg></span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:#14261C;line-height:1.25;">Zona de alta plusvalía</span></div>
+          <div style="flex:0 0 auto;width:222px;display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:14px;padding:14px 16px;"><span style="width:42px;height:42px;border-radius:11px;background:#ffffff;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 10h16M12 3 4 8v2h16V8zM6 10v11M10 10v11M14 10v11M18 10v11"></path></svg></span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:#14261C;line-height:1.25;">Financiamiento con bancos</span></div>
+          <div style="flex:0 0 auto;width:222px;display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:14px;padding:14px 16px;"><span style="width:42px;height:42px;border-radius:11px;background:#ffffff;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:#14261C;line-height:1.25;">Ubicación estratégica</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE NOSOTROS / BENEFICIOS ============ -->
+<section id="nosotros" data-screen-label="Sobre nosotros" style="padding:clamp(70px,9vw,120px) clamp(18px,4vw,40px) clamp(64px,8vw,110px);">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:clamp(30px,4vw,56px);align-items:center;">
+    <!-- left -->
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;">
+      <span style="display:inline-block;background:#14432A;color:#CDEAC0;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:999px;">Sobre nosotros</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Los beneficios de invertir con Ecodistrito</h2>
+      <p style="color:#5B6B60;font-size:16px;line-height:1.7;margin:18px 0 32px;max-width:520px;">Combinamos sustentabilidad, calidad e innovación para crear condominios que se personalizan a tu estilo de vida, en una de las zonas de mayor plusvalía de Tegucigalpa.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;">
+        <div style="display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:12px;padding:15px 16px;"><span style="width:26px;height:26px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="font-weight:500;font-size:14.5px;color:#14261C;">Agua potable 24/7</span></div>
+        <div style="display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:12px;padding:15px 16px;"><span style="width:26px;height:26px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="font-weight:500;font-size:14.5px;color:#14261C;">Más de 300 estacionamientos</span></div>
+        <div style="display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:12px;padding:15px 16px;"><span style="width:26px;height:26px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="font-weight:500;font-size:14.5px;color:#14261C;">Seguridad privada 24/7</span></div>
+        <div style="display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:12px;padding:15px 16px;"><span style="width:26px;height:26px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="font-weight:500;font-size:14.5px;color:#14261C;">Tratamiento de agua por ósmosis inversa</span></div>
+        <div style="display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:12px;padding:15px 16px;"><span style="width:26px;height:26px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="font-weight:500;font-size:14.5px;color:#14261C;">Planta de tratamiento de aguas residuales</span></div>
+        <div style="display:flex;align-items:center;gap:12px;background:#F4F3EE;border-radius:12px;padding:15px 16px;"><span style="width:26px;height:26px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="font-weight:500;font-size:14.5px;color:#14261C;">Zona de alta plusvalía</span></div>
+      </div>
+    </div>
+    <!-- right form -->
+    <div id="contacto" data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;background:#14432A;border-radius:26px;padding:clamp(26px,3vw,42px);position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(20,67,42,.28);">
+      
+      <h3 style="font-family:'Sora',sans-serif;font-weight:700;color:#ffffff;font-size:clamp(22px,2.4vw,29px);margin:0;position:relative;">Agenda una consulta gratis</h3>
+      <p style="color:rgba(205,234,192,.85);font-size:14.5px;line-height:1.6;margin:10px 0 26px;position:relative;">Cuéntanos qué buscas y te contactamos. Los campos marcados con * son obligatorios.</p>
+      <form data-ecd-form="" data-form="contacto" style="display:flex;flex-direction:column;gap:14px;position:relative;">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
+        <input type="text" name="nombre" required="" placeholder="Nombre *" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
+        <input type="email" name="email" required="" placeholder="Email *" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
+        <input type="tel" name="telefono" placeholder="Teléfono" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;">
+          <select name="tipo_condominio" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:rgba(255,255,255,.75);font-size:14.5px;outline:none;appearance:none;">
+            <option>Tipo de condominio</option>
+            <option>Apartaestudio</option>
+            <option>1 habitación</option>
+            <option>2 habitaciones</option>
+            <option>Loft doble altura</option>
+          </select>
+          <select name="presupuesto" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:rgba(255,255,255,.75);font-size:14.5px;outline:none;appearance:none;">
+            <option>Rango de presupuesto</option>
+            <option>$40,000 – $60,000</option>
+            <option>$60,000 – $85,000</option>
+            <option>$85,000 – $120,000</option>
+            <option>Más de $120,000</option>
+          </select>
+        </div>
+        <button data-submit="" type="submit" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#CDEAC0;color:#14432A;font-weight:700;font-size:15px;padding:16px 24px;border-radius:12px;border:none;cursor:pointer;transition:background .25s ease,transform .25s ease;" style-hover="background:#bfe0af;transform:translateY(-2px);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"></path></svg>
+          Contáctanos hoy
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDIFICIO / ESPECIFICACIONES ============ -->
+<section data-screen-label="El edificio" style="background:#F4F3EE;padding:clamp(70px,9vw,120px) clamp(18px,4vw,40px);">
+  <div style="max-width:1180px;margin:0 auto;">
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;text-align:center;max-width:720px;margin:0 auto 54px;">
+      <span style="display:inline-block;background:#14432A;color:#CDEAC0;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:999px;">El edificio</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:clamp(30px,3.8vw,48px);line-height:1.08;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Un edificio pensado para ti</h2>
+      <p style="color:#5B6B60;font-size:16px;line-height:1.7;margin:16px 0 0;">Diseño moderno y sustentable distribuido en 19 niveles, con espacios pensados para vivir, convivir e invertir.</p>
+    </div>
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;">
+      <div data-marquee="" data-speed="48" style="overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);">
+        <div data-marquee-track="" style="display:flex;gap:16px;width:max-content;will-change:transform;">
+          <div style="flex:0 0 auto;width:clamp(232px,25vw,268px);background:#ffffff;border-radius:18px;padding:30px 28px;border:1px solid #eceae2;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:44px;line-height:1;">19</div>
+            <div style="font-weight:600;color:#14261C;margin-top:12px;font-size:16px;">Niveles totales</div>
+            <div style="color:#5B6B60;font-size:14px;margin-top:6px;line-height:1.5;">Arquitectura vertical moderna sobre la ciudad.</div>
+          </div>
+          <div style="flex:0 0 auto;width:clamp(232px,25vw,268px);background:#ffffff;border-radius:18px;padding:30px 28px;border:1px solid #eceae2;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:44px;line-height:1;">4</div>
+            <div style="font-weight:600;color:#14261C;margin-top:12px;font-size:16px;">Niveles de estacionamiento</div>
+            <div style="color:#5B6B60;font-size:14px;margin-top:6px;line-height:1.5;">360 espacios disponibles para residentes y visitas.</div>
+          </div>
+          <div style="flex:0 0 auto;width:clamp(232px,25vw,268px);background:#ffffff;border-radius:18px;padding:30px 28px;border:1px solid #eceae2;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:44px;line-height:1;">1</div>
+            <div style="font-weight:600;color:#14261C;margin-top:12px;font-size:16px;">Nivel de lobby y área social</div>
+            <div style="color:#5B6B60;font-size:14px;margin-top:6px;line-height:1.5;">Recepción, coworking y espacios de convivencia.</div>
+          </div>
+          <div style="flex:0 0 auto;width:clamp(232px,25vw,268px);background:#ffffff;border-radius:18px;padding:30px 28px;border:1px solid #eceae2;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:44px;line-height:1;">12</div>
+            <div style="font-weight:600;color:#14261C;margin-top:12px;font-size:16px;">Niveles típicos</div>
+            <div style="color:#5B6B60;font-size:14px;margin-top:6px;line-height:1.5;">Apartaestudios y apartamentos personalizables.</div>
+          </div>
+          <div style="flex:0 0 auto;width:clamp(232px,25vw,268px);background:#ffffff;border-radius:18px;padding:30px 28px;border:1px solid #eceae2;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:44px;line-height:1;">1</div>
+            <div style="font-weight:600;color:#14261C;margin-top:12px;font-size:16px;">Nivel superior de lofts</div>
+            <div style="color:#5B6B60;font-size:14px;margin-top:6px;line-height:1.5;">Lofts exclusivos de doble altura con vistas.</div>
+          </div>
+          <div style="flex:0 0 auto;width:clamp(232px,25vw,268px);background:#ffffff;border-radius:18px;padding:30px 28px;border:1px solid #eceae2;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:44px;line-height:1;">3</div>
+            <div style="font-weight:600;color:#14261C;margin-top:12px;font-size:16px;">Cabinas de ascensor</div>
+            <div style="color:#5B6B60;font-size:14px;margin-top:6px;line-height:1.5;">Circulación ágil y cómoda en todo el edificio.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIPOS DE CONDOMINIOS ============ -->
+<section id="condominios" data-screen-label="Condominios" style="padding:clamp(70px,9vw,120px) clamp(18px,4vw,40px);">
+  <div style="max-width:1220px;margin:0 auto;">
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;text-align:center;max-width:700px;margin:0 auto 52px;">
+      <span style="display:inline-block;background:#14432A;color:#CDEAC0;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:999px;">Condominios</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:clamp(30px,3.8vw,48px);line-height:1.08;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Encuentra el espacio a tu medida</h2>
+      <p style="color:#5B6B60;font-size:16px;line-height:1.7;margin:16px 0 0;">Cuatro tipos de condominio que puedes personalizar a tu estilo de vida.</p>
+    </div>
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:22px;">
+      <!-- card -->
+      <div style="background:#ffffff;border-radius:20px;overflow:hidden;border:1px solid #eceae2;box-shadow:0 12px 30px rgba(20,38,28,.06);transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 26px 50px rgba(20,38,28,.14);">
+        <div style="position:relative;height:210px;background-image:url('assets/img/interior-loft.jpg');background-size:cover;background-position:center;">
+          <span style="position:absolute;top:14px;left:14px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:6px 13px;border-radius:999px;">Compacto</span>
+          <span style="position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:11px;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </div>
+        <div style="padding:22px 22px 26px;">
+          <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#14261C;margin:0;">Apartaestudio</h3>
+          <p style="color:#5B6B60;font-size:14px;line-height:1.55;margin:8px 0 16px;">Espacio inteligente y funcional, ideal para vivir o invertir.</p>
+          <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:17px;">Cuotas desde $430 mensuales*</div>
+          <a data-nav="contacto" href="#contacto" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:#14432A;color:#ffffff;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;transition:background .25s ease;" style-hover="background:#1B5E3F;">Más información</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div style="background:#ffffff;border-radius:20px;overflow:hidden;border:1px solid #eceae2;box-shadow:0 12px 30px rgba(20,38,28,.06);transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 26px 50px rgba(20,38,28,.14);">
+        <div style="position:relative;height:210px;background-image:url('assets/img/interior-apartaestudio.jpg');background-size:cover;background-position:center;">
+          <span style="position:absolute;top:14px;left:14px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:6px 13px;border-radius:999px;">1 habitación</span>
+          <span style="position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:11px;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </div>
+        <div style="padding:22px 22px 26px;">
+          <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#14261C;margin:0;">1 habitación</h3>
+          <p style="color:#5B6B60;font-size:14px;line-height:1.55;margin:8px 0 16px;">Comodidad y estilo con dormitorio independiente y sala.</p>
+          <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:17px;">Cuotas desde $430 mensuales*</div>
+          <a data-nav="contacto" href="#contacto" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:#14432A;color:#ffffff;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;transition:background .25s ease;" style-hover="background:#1B5E3F;">Más información</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div style="background:#ffffff;border-radius:20px;overflow:hidden;border:1px solid #eceae2;box-shadow:0 12px 30px rgba(20,38,28,.06);transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 26px 50px rgba(20,38,28,.14);">
+        <div style="position:relative;height:210px;background-image:url('assets/img/interior-comedor.jpg');background-size:cover;background-position:center;">
+          <span style="position:absolute;top:14px;left:14px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:6px 13px;border-radius:999px;">2 habitaciones</span>
+          <span style="position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:11px;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </div>
+        <div style="padding:22px 22px 26px;">
+          <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#14261C;margin:0;">2 habitaciones</h3>
+          <p style="color:#5B6B60;font-size:14px;line-height:1.55;margin:8px 0 16px;">Espacio para toda la familia con áreas amplias y luz natural.</p>
+          <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:17px;">Cuotas desde $430 mensuales*</div>
+          <a data-nav="contacto" href="#contacto" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:#14432A;color:#ffffff;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;transition:background .25s ease;" style-hover="background:#1B5E3F;">Más información</a>
+        </div>
+      </div>
+      <!-- card -->
+      <div style="background:#ffffff;border-radius:20px;overflow:hidden;border:1px solid #eceae2;box-shadow:0 12px 30px rgba(20,38,28,.06);transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 26px 50px rgba(20,38,28,.14);">
+        <div style="position:relative;height:210px;background-image:url('assets/img/dormitorio-madera.jpg');background-size:cover;background-position:center;">
+          <span style="position:absolute;top:14px;left:14px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:6px 13px;border-radius:999px;">Premium</span>
+          <span style="position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:11px;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        </div>
+        <div style="padding:22px 22px 26px;">
+          <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:20px;color:#14261C;margin:0;">Loft (doble altura)</h3>
+          <p style="color:#5B6B60;font-size:14px;line-height:1.55;margin:8px 0 16px;">Lofts exclusivos de doble altura en el nivel superior.</p>
+          <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14432A;font-size:17px;">Cuotas desde $430 mensuales*</div>
+          <a data-nav="contacto" href="#contacto" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:#14432A;color:#ffffff;font-weight:600;font-size:14px;padding:12px 20px;border-radius:999px;transition:background .25s ease;" style-hover="background:#1B5E3F;">Más información</a>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;color:#8a988e;font-size:13px;margin:26px 0 0;">*Cuotas calculadas con 7% de interés anual con fondos BANHPROVI.</p>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section data-screen-label="Servicios" style="background:#F4F3EE;padding:clamp(70px,9vw,120px) clamp(18px,4vw,40px);">
+  <div style="max-width:1180px;margin:0 auto;">
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;text-align:center;max-width:700px;margin:0 auto 52px;">
+      <span style="display:inline-block;background:#14432A;color:#CDEAC0;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:999px;">Nuestros servicios</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:clamp(30px,3.8vw,48px);line-height:1.08;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Compra, invierte y muy pronto renta</h2>
+    </div>
+    <div data-reveal="" data-ecd="serv-grid" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div style="background:#ffffff;border-radius:20px;padding:34px 30px;border:1px solid #eceae2;transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 24px 46px rgba(20,38,28,.12);">
+        <span style="width:56px;height:56px;border-radius:16px;background:#14432A;color:#CDEAC0;display:flex;align-items:center;justify-content:center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5"></path><path d="M5 9.5V20h14V9.5"></path><path d="M9.5 20v-6h5v6"></path></svg></span>
+        <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:22px;color:#14261C;margin:22px 0 10px;">Compra</h3>
+        <p style="color:#5B6B60;font-size:15px;line-height:1.65;margin:0;">Adquiere y personaliza tu condominio a tu estilo, con acompañamiento en todo el proceso.</p>
+      </div>
+      <div style="background:#ffffff;border-radius:20px;padding:34px 30px;border:1px solid #eceae2;transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 24px 46px rgba(20,38,28,.12);">
+        <span style="width:56px;height:56px;border-radius:16px;background:#14432A;color:#CDEAC0;display:flex;align-items:center;justify-content:center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18l5-5 3.5 3.5L20 9"></path><path d="M16 9h4v4"></path></svg></span>
+        <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:22px;color:#14261C;margin:22px 0 10px;">Invierte</h3>
+        <p style="color:#5B6B60;font-size:15px;line-height:1.65;margin:0;">Oportunidades de inversión con alta rentabilidad en renta, en zona de creciente plusvalía.</p>
+      </div>
+      <div style="background:#ffffff;border-radius:20px;padding:34px 30px;border:1px solid #eceae2;position:relative;transition:transform .3s ease,box-shadow .3s ease;" style-hover="transform:translateY(-6px);box-shadow:0 24px 46px rgba(20,38,28,.12);">
+        
+        <span style="width:56px;height:56px;border-radius:16px;background:#14432A;color:#CDEAC0;display:flex;align-items:center;justify-content:center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-4 7 4v13"></path><path d="M9.5 21v-5h5v5"></path></svg></span>
+        <h3 style="font-family:'Sora',sans-serif;font-weight:600;font-size:22px;color:#14261C;margin:22px 0 10px;">Renta</h3>
+        <p style="color:#5B6B60;font-size:15px;line-height:1.65;margin:0;">Conoce muy pronto las diferentes opciones de renta pensadas para ti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section data-screen-label="Testimonios" style="padding:clamp(70px,9vw,120px) clamp(18px,4vw,40px);">
+  <div style="max-width:1180px;margin:0 auto;">
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,3vw,48px);align-items:center;">
+      <div style="position:relative;border-radius:24px;overflow:hidden;min-height:380px;background-image:url('assets/img/salon-social.jpg');background-size:cover;background-position:center;">
+        <span style="position:absolute;top:20px;left:20px;background:rgba(255,255,255,.9);color:#14432A;font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:8px 16px;border-radius:999px;">Lo que dicen nuestros clientes</span>
+      </div>
+      <div style="background:#F4F3EE;border-radius:24px;padding:clamp(26px,3vw,44px);">
+        <div style="font-family:'Sora',sans-serif;font-weight:700;color:#CDEAC0;font-size:64px;line-height:.6;">“</div>
+        <div style="overflow:hidden;margin-top:6px;">
+          <div id="ecd-testi-track" style="display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1);">
+            <div data-testi="" style="flex:0 0 100%;">
+              <p style="font-family:'Sora',sans-serif;font-weight:500;color:#14261C;font-size:clamp(18px,1.8vw,23px);line-height:1.5;margin:0;">Comprar en Ecodistrito fue la mejor decisión. Nos dejaron personalizar el apartamento a nuestro gusto y el proceso fue transparente de principio a fin.</p>
+              <div style="display:flex;align-items:center;gap:14px;margin-top:26px;">
+                <span style="width:52px;height:52px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:700;">MR</span>
+                <div>
+                  <div style="font-weight:600;color:#14261C;font-size:16px;">María Rodríguez</div>
+                  <div style="color:#5B6B60;font-size:13.5px;">Propietaria · Apartaestudio</div>
+                  <div style="color:#14432A;font-size:13px;letter-spacing:2px;margin-top:3px;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div data-testi="" style="flex:0 0 100%;">
+              <p style="font-family:'Sora',sans-serif;font-weight:500;color:#14261C;font-size:clamp(18px,1.8vw,23px);line-height:1.5;margin:0;">La ubicación y las amenidades son increíbles. La terraza y la vista a Tegucigalpa hacen que valga cada centavo. Excelente inversión para rentar.</p>
+              <div style="display:flex;align-items:center;gap:14px;margin-top:26px;">
+                <span style="width:52px;height:52px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:700;">CL</span>
+                <div>
+                  <div style="font-weight:600;color:#14261C;font-size:16px;">Carlos López</div>
+                  <div style="color:#5B6B60;font-size:13.5px;">Inversionista · 2 habitaciones</div>
+                  <div style="color:#14432A;font-size:13px;letter-spacing:2px;margin-top:3px;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div data-testi="" style="flex:0 0 100%;">
+              <p style="font-family:'Sora',sans-serif;font-weight:500;color:#14261C;font-size:clamp(18px,1.8vw,23px);line-height:1.5;margin:0;">Nos asesoraron con el financiamiento BANHPROVI y todo fue muy claro. Hoy vivimos en un loft de doble altura que amamos. 100% recomendados.</p>
+              <div style="display:flex;align-items:center;gap:14px;margin-top:26px;">
+                <span style="width:52px;height:52px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:700;">AF</span>
+                <div>
+                  <div style="font-weight:600;color:#14261C;font-size:16px;">Ana Fúnez</div>
+                  <div style="color:#5B6B60;font-size:13.5px;">Propietaria · Loft doble altura</div>
+                  <div style="color:#14432A;font-size:13px;letter-spacing:2px;margin-top:3px;">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:30px;">
+          <div style="display:flex;gap:10px;">
+            <button id="ecd-testi-prev" aria-label="Anterior" style="width:46px;height:46px;border-radius:12px;background:#ffffff;border:1px solid #e2e0d7;color:#14432A;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease;" style-hover="background:#CDEAC0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg></button>
+            <button id="ecd-testi-next" aria-label="Siguiente" style="width:46px;height:46px;border-radius:12px;background:#14432A;border:none;color:#ffffff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease;" style-hover="background:#1B5E3F;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></button>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <span data-testi-dot="" style="width:9px;height:9px;border-radius:50%;background:#14432A;"></span>
+            <span data-testi-dot="" style="width:9px;height:9px;border-radius:50%;background:#CDEAC0;"></span>
+            <span data-testi-dot="" style="width:9px;height:9px;border-radius:50%;background:#CDEAC0;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA / AMENIDADES ============ -->
+<section id="amenidades" data-screen-label="Amenidades" style="background:#F4F3EE;padding:clamp(70px,9vw,120px) clamp(18px,4vw,40px);">
+  <div style="max-width:1220px;margin:0 auto;">
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;text-align:center;max-width:720px;margin:0 auto 52px;">
+      <span style="display:inline-block;background:#14432A;color:#CDEAC0;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:999px;">Amenidades y galería</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:clamp(30px,3.8vw,48px);line-height:1.08;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Espacios diseñados para vivir mejor</h2>
+      <p style="color:#5B6B60;font-size:16px;line-height:1.7;margin:16px 0 0;">Cancha, terrazas verdes, salón social y áreas de convivencia con vista a la ciudad.</p>
+    </div>
+    <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+      <div data-lightbox="" style="cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background-image:url('assets/img/fachada-calle.jpg');background-size:cover;background-position:center;"></div>
+      <div data-lightbox="" style="cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background-image:url('assets/img/terraza-jardin.jpg');background-size:cover;background-position:center;"></div>
+      <div data-lightbox="" style="cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background-image:url('assets/img/cancha-tenis.jpg');background-size:cover;background-position:center;"></div>
+      <div data-lightbox="" style="cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background-image:url('assets/img/jardin-azotea.jpg');background-size:cover;background-position:center;"></div>
+      <div data-lightbox="" style="cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background-image:url('assets/img/terraza-lounge.jpg');background-size:cover;background-position:center;"></div>
+      <div data-lightbox="" style="cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background-image:url('assets/img/dormitorio-minimal.jpg');background-size:cover;background-position:center;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section data-screen-label="CTA" style="padding:clamp(40px,6vw,80px) clamp(18px,4vw,40px);">
+  <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;max-width:1220px;margin:0 auto;position:relative;border-radius:28px;overflow:hidden;">
+    <div style="position:absolute;inset:0;background-image:url('assets/img/cta-interior.jpg');background-size:cover;background-position:center;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(15,52,32,.94) 0%, #0A1E0561, #FAF9F500)"></div>
+    <div style="position:relative;padding:clamp(44px,6vw,84px) clamp(24px,5vw,68px);max-width:640px;">
+      <span style="display:inline-block;background:#CDEAC0;color:#14432A;font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:8px 18px;border-radius:999px;">Conecta con nosotros hoy</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#ffffff;font-size:clamp(28px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Construyamos juntos tu nuevo hogar</h2>
+      <p style="color:rgba(255,255,255,.85);font-size:16px;line-height:1.7;margin:16px 0 32px;">Agenda una cita y descubre cómo personalizar tu condominio en Ecodistrito, en la mejor zona de Tegucigalpa.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a data-nav="contacto" href="#contacto" style="display:inline-flex;align-items:center;gap:10px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;transition:transform .25s ease,background .25s ease;" style-hover="background:#bfe0af;transform:translateY(-2px);">Agenda una cita</a>
+        <a data-nav="contacto" href="#contacto" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#ffffff;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.4);transition:background .25s ease;" style-hover="background:rgba(255,255,255,.12);">Solicita información</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section style="padding:clamp(50px,7vw,90px) clamp(18px,4vw,40px) clamp(70px,9vw,110px);">
+  <div data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;max-width:760px;margin:0 auto;text-align:center;">
+    <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:clamp(26px,3.4vw,42px);line-height:1.12;letter-spacing:-.02em;margin:0;text-wrap:balance;">Mantente al día. Recibe información exclusiva.</h2>
+    <p style="color:#5B6B60;font-size:15px;line-height:1.6;margin:14px 0 28px;">Novedades, disponibilidad y oportunidades de inversión directamente en tu correo.</p>
+    <form data-ecd-form="" data-form="newsletter" style="display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap;justify-content:center;">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
+      <input type="email" name="email" required="" placeholder="Tu correo electrónico *" style="flex:1;min-width:220px;background:#F4F3EE;border:1px solid #e2e0d7;border-radius:12px;padding:16px 18px;color:#14261C;font-size:15px;outline:none;">
+      <button data-submit="" type="submit" style="display:inline-flex;align-items:center;gap:10px;background:#14432A;color:#ffffff;font-weight:600;font-size:15px;padding:16px 28px;border-radius:12px;border:none;cursor:pointer;transition:background .25s ease;" style-hover="background:#1B5E3F;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"></path><path d="M22 2 15 22l-4-9-9-4z"></path></svg>
+        Suscribirme
+      </button>
+    </form>
+    <p style="color:#9aa79e;font-size:12.5px;margin:16px 0 0;">Puedes darte de baja en cualquier momento. Consulta nuestra <a href="#" style="color:#14432A;text-decoration:underline;">Política de Privacidad</a>.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-screen-label="Footer" style="background:#14432A;color:#ffffff;padding:clamp(56px,7vw,88px) clamp(18px,4vw,40px) 34px;">
+  <div style="max-width:1220px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:40px;">
+      <div style="max-width:340px;">
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <svg viewBox="0 0 7620.29 877.32" role="img" aria-label="Ecodistrito" preserveAspectRatio="xMinYMid meet" style="height:27px;width:auto;max-width:234px;align-self:flex-start;display:block;fill:#CDEAC0;"><path d="M7620.29,349.36v184.79c-32.55,177.07-173.82,316.24-351.98,343.18h-131.99c-207.26-36.3-351.8-206.98-355.25-422.89-2.09-130.68,42.66-254.16,135.85-339.32,96.58-88.25,229.56-124.86,360.88-102.72,179.08,30.2,308.9,164.92,342.49,336.96ZM7216.82,802.81c134.9-4.97,244.22-81.56,291.75-205.24,38.95-101.35,38.62-217.07-2.97-317.59-52.64-127.23-171.84-198.97-307.65-197.22-148.44,1.92-272.08,93.49-311.71,237.32-25.16,91.32-23.49,188.88,10.78,277.11,51.66,133,174.27,210.98,319.81,205.62Z"></path><path d="M1037.38.16c151.6,15.89,285.61,100.43,339.63,256.99l-100.49-1.32c-47.44-116.71-151.84-177.54-273.3-182.72-144.85-6.18-272.63,71.86-321.14,210.48-34.44,98.4-34.34,207.37,2.04,304.99,51.74,138.82,182.28,213.76,328.1,204.04,117.68-7.84,219.12-67.68,264.28-180.76l100.58.47c-48.04,135.22-157.9,220.02-295.8,247.51-167.4,33.37-341.18-25.24-437.11-169.26-89.47-134.32-98.68-305.68-34.42-452.62C669.19,101.99,792.18,20.19,933.81.12l103.57.03Z"></path><path d="M4134.52,874.48l-111.79-.03c-121.63-15.93-225.51-96.78-231.51-224.28l89.56-.7c12.37,85.7,75.23,145.78,160.4,153.67,49.42,4.58,104.05.88,146.07-22.38,58.53-32.4,84.38-89.12,78.48-152.55-5.14-55.3-48.97-104.52-110.28-123.28l-195.09-59.71c-50.45-15.44-101.07-44.13-129.71-90.33-57.31-92.47-39.48-221.2,49.15-287.62,99.21-74.35,234.55-80.14,343.63-26.7,70.58,34.58,113.34,99.16,122.89,174.08l-92.13-.66c-30.8-120.89-165.25-160.09-273.8-117.87-62.97,24.49-96.54,78.93-95.62,141.04.85,57.17,38.67,112.71,99.49,132.15l206.06,65.88c55.37,17.7,109.08,48.51,137.39,101.02,38.95,72.26,34.44,159.87-12.06,231.11-37.02,56.72-106.18,96.31-181.14,107.17Z"></path><polygon points="0 859.72 0 6.18 439.08 6.5 439.41 78.82 80.58 78.35 80.83 395.4 403.54 395.74 403.15 466.32 80.98 466.62 80.99 789.19 439.49 789 439.97 860.12 0 859.72"></polygon><path d="M1978.86,0c102.93,13.62,196.78,54.76,267.47,136.38l-47.42,73.3c-71.88-101.49-185.25-145.16-307.86-133.29-156.03,15.11-270,135.54-290.03,291.21-15.44,120,7.05,241.67,92.28,330.21,94.6,98.28,237.48,119.62,364.92,72.92l72.84,50.69c-150.8,75.01-324.68,62.87-456.1-34.84-122.97-91.42-174.3-235.93-165.95-386.15C1520.68,190.08,1670.29,26.39,1875.75.35l103.11-.35Z"></path><polygon points="2551.83 877.32 2534.23 877.32 2534.37 6.84 2551.98 23.69 2551.83 877.32"></polygon><path d="M3327.03,137.05c146.01,150.69,149.73,445.54,13.71,597.27-154.97,172.88-381.59,129.03-605.48,134.28l-.07-851.52c218.13-.59,434.99-31.74,591.83,119.96ZM3340.02,553.48c15.85-72.79,14.67-142.48,1.7-210.56-27.85-146.17-145.38-249.29-294.58-251.61l-225.73-3.5-.04,710.05c86.02-.02,164.19,2.33,243.78-5.41,135.69-13.2,245.08-102.22,274.86-238.97Z"></path><path d="M5636.17,871.71l-213.05-358.14-156.93-.27.26,352.69-85.87,1.65-.06-849.89c108.71-3.99,218.04-4.74,327.61,2.94,132.28,17.01,225.03,116.13,218.11,249.5.21,121.31-79.73,216.4-208.73,236.26l218.34,360.74-99.68,4.52ZM5639.59,257.45c-2.43-95.6-64-164.03-157.92-165.46l-215.43-3.28-.08,354.47,216.76-3.2c98.1-1.45,159.17-84.72,156.68-182.53Z"></path><path d="M2098.81,765.58c-35.27-29.1-63.14-78.02-83.52-126.74-59.52-188.61,140.99-320.48,251.79-476.63,141.82,217.82,129.46,470.52-96.76,635-34.34-149.93-11.19-294.06,56.26-431.46-90.42,108.89-109.83,245.64-127.78,399.83Z"></path><polygon points="6407.42 866.25 6321.19 868.01 6321.68 88.59 6084.48 88.05 6084.56 15.71 6642.94 15.36 6643.21 87.99 6407.13 88.15 6407.42 866.25"></polygon><polygon points="4810.01 867.38 4723.4 867.63 4723.47 88.06 4486.69 88.26 4487.55 15.35 5042.92 15.21 5045.35 88.4 4810.06 87.64 4810.01 867.38"></polygon><rect x="3188.61" y="399.59" width="851.53" height="86.33" transform="translate(3171.3132 4057.0972) rotate(-89.9951)"></rect><rect x="5865.91" y="16.99" width="86.05" height="851.54"></rect></svg>
+        </div>
+        <p style="color:rgba(255,255,255,.68);font-size:14.5px;line-height:1.7;margin:22px 0 0;">En Ecodistrito combinamos sustentabilidad, calidad e innovación para crear condominios que se personalizan a tu estilo de vida en Tegucigalpa.</p>
+        <div style="display:flex;gap:10px;margin-top:22px;">
+          <a href="https://instagram.com/ecodistritohn" style="width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#CDEAC0;transition:background .2s ease;" style-hover="background:rgba(205,234,192,.2);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+          <a href="https://facebook.com/ecodistritohn" style="width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#CDEAC0;transition:background .2s ease;" style-hover="background:rgba(205,234,192,.2);"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V5.5h-3c-2 0-3.5 1.6-3.5 3.6V11H8v3.5h2.5V22H14v-7.5h2.6l.4-3.5H14V9.4c0-.3.2-.4.5-.4z"></path></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px;margin:0 0 18px;">Enlaces rápidos</h4>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <a data-nav="inicio" href="#inicio" style="color:rgba(255,255,255,.7);font-size:14.5px;" style-hover="color:#CDEAC0;">Inicio</a>
+          <a data-nav="nosotros" href="#nosotros" style="color:rgba(255,255,255,.7);font-size:14.5px;" style-hover="color:#CDEAC0;">Sobre nosotros</a>
+          <a data-nav="condominios" href="#condominios" style="color:rgba(255,255,255,.7);font-size:14.5px;" style-hover="color:#CDEAC0;">Condominios</a>
+          <a data-nav="amenidades" href="#amenidades" style="color:rgba(255,255,255,.7);font-size:14.5px;" style-hover="color:#CDEAC0;">Amenidades</a>
+          <a data-nav="contacto" href="#contacto" style="color:rgba(255,255,255,.7);font-size:14.5px;" style-hover="color:#CDEAC0;">Contáctanos</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px;margin:0 0 18px;">Ubicación</h4>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <span style="width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);color:#CDEAC0;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+          <div style="color:rgba(255,255,255,.7);font-size:14.5px;line-height:1.6;">Tegucigalpa,<br>Honduras C.A.</div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px;margin:0 0 18px;">Contacto</h4>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);color:#CDEAC0;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"></path></svg></span>
+            <div style="color:rgba(255,255,255,.7);font-size:14.5px;line-height:1.6;">9454-4389<br>9460-1511</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;">
+            <span style="width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);color:#CDEAC0;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
+            <div style="color:rgba(255,255,255,.7);font-size:14.5px;">info@ecoproyectoshn.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height:1px;background:rgba(255,255,255,.12);margin:44px 0 24px;"></div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
+      <div style="color:rgba(255,255,255,.55);font-size:13.5px;">© 2026 Ecodistrito. Todos los derechos reservados.</div>
+      <div style="color:rgba(255,255,255,.55);font-size:13.5px;">Instagram @ecodistritohn · Facebook ecodistritohn</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING QUICK ACCESS ============ -->
+<div style="position:fixed;right:16px;bottom:22px;z-index:70;display:flex;flex-direction:column;gap:12px;">
+  <a id="ecd-wa" href="https://wa.me/50494544389" aria-label="WhatsApp" style="width:52px;height:52px;border-radius:50%;background:#CDEAC0;color:#14432A;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(20,67,42,.28);transition:transform .25s ease;" style-hover="transform:translateY(-3px) scale(1.05);">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+  </a>
+  <a id="ecd-phone" href="tel:+50494544389" aria-label="Llamar" style="width:52px;height:52px;border-radius:50%;background:#14432A;color:#ffffff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(20,67,42,.28);transition:transform .25s ease;" style-hover="transform:translateY(-3px) scale(1.05);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"></path></svg>
+  </a>
+  <button id="ecd-top" aria-label="Ir arriba" style="width:52px;height:52px;border-radius:50%;background:#ffffff;color:#14432A;border:1px solid #e2e0d7;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(20,38,28,.12);opacity:0;pointer-events:none;transition:transform .25s ease,opacity .3s ease;" style-hover="transform:translateY(-3px) scale(1.05);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"></path><path d="M5 12l7-7 7 7"></path></svg>
+  </button>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="ecd-lightbox" aria-hidden="true" style="position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;background:rgba(9,15,11,.92);padding:clamp(16px,4vw,48px);opacity:0;transition:opacity .25s ease;">
+  <button id="ecd-lightbox-close" aria-label="Cerrar" style="position:absolute;top:18px;right:18px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);border:none;color:#ffffff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="M6 6l12 12"></path></svg>
+  </button>
+  <img id="ecd-lightbox-img" src="" alt="" style="max-width:100%;max-height:100%;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.5);transform:scale(.96);transition:transform .25s ease;">
+</div>
+
+</div>
+<script>
+(function(){
+  var props = { heroAutoplay:true, heroInterval:6, phoneNumber:'+504 9454-4389', whatsappNumber:'50494544389' };
+  /* CORREO DE CONTACTO: para que los formularios lleguen directo a tu bandeja,
+     crea una Access Key gratis en https://web3forms.com usando info@ecoproyectoshn.com
+     y pégala entre las comillas de abajo. Mientras quede vacía, el formulario abrirá
+     el correo del visitante ya dirigido a info@ecoproyectoshn.com. */
+  var WEB3FORMS_KEY = '';
+  function init(){
+
+    const q = (s)=>document.querySelector(s);
+    const qa = (s)=>Array.from(document.querySelectorAll(s));
+
+    /* ---- Lightbox (abre imágenes con un clic, sin mostrar el nombre) ---- */
+    (function(){
+      var lb = q('#ecd-lightbox'), lbImg = q('#ecd-lightbox-img'), lbClose = q('#ecd-lightbox-close');
+      if(!lb || !lbImg) return;
+      function open(url){
+        lbImg.src = url;
+        lb.style.display = 'flex';
+        lb.setAttribute('aria-hidden','false');
+        requestAnimationFrame(function(){ lb.style.opacity='1'; lbImg.style.transform='scale(1)'; });
+        document.body.style.overflow = 'hidden';
+      }
+      function close(){
+        lb.style.opacity='0'; lbImg.style.transform='scale(.96)';
+        lb.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        setTimeout(function(){ lb.style.display='none'; lbImg.src=''; }, 250);
+      }
+      qa('[data-lightbox]').forEach(function(el){
+        el.addEventListener('click', function(){
+          var bg = getComputedStyle(el).backgroundImage || '';
+          var m = bg.match(/url\(["']?([^"')]+)["']?\)/);
+          if(m) open(m[1]);
+        });
+      });
+      if(lbClose) lbClose.addEventListener('click', close);
+      lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+      document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && lb.style.display==='flex') close(); });
+    })();
+
+    /* ---- Sticky header + back-to-top visibility ---- */
+    const header = q('#ecd-header');
+    const btt = q('#ecd-top');
+    const onScroll = ()=>{
+      if(header){
+        if(window.scrollY > 18){
+          header.style.boxShadow = '0 8px 30px rgba(20,38,28,.09)';
+          header.style.background = 'rgba(255,255,255,.94)';
+          header.style.backdropFilter = 'blur(10px)';
+        } else {
+          header.style.boxShadow = 'none';
+          header.style.background = '#ffffff';
+          header.style.backdropFilter = 'none';
+        }
+      }
+      if(btt){
+        const show = window.scrollY > 480;
+        btt.style.opacity = show ? '1' : '0';
+        btt.style.pointerEvents = show ? 'auto' : 'none';
+      }
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    /* ---- Scroll reveal ---- */
+    const revEls = qa('[data-reveal]');
+    const reveal = (el)=>{ el.style.opacity='1'; el.style.transform='none'; };
+    if('IntersectionObserver' in window){
+      const io = new IntersectionObserver((ents)=>{
+        ents.forEach(e=>{ if(e.isIntersecting){ reveal(e.target); io.unobserve(e.target); } });
+      }, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+      revEls.forEach(el=>io.observe(el));
+    } else {
+      revEls.forEach(reveal);
+    }
+    setTimeout(()=>revEls.forEach(el=>{ if(getComputedStyle(el).opacity === '0') reveal(el); }), 1800);
+
+    /* ---- Auto marquees ---- */
+    qa('[data-marquee]').forEach(wrap=>{
+      const track = wrap.querySelector('[data-marquee-track]');
+      if(!track) return;
+      const originals = Array.from(track.children);
+      if(!originals.length) return;
+      originals.forEach(it=>{ const c = it.cloneNode(true); c.setAttribute('aria-hidden','true'); track.appendChild(c); });
+      let setWidth = 0;
+      const measure = ()=>{
+        const cs = getComputedStyle(track);
+        const gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
+        let w = 0;
+        originals.forEach(it=> w += it.getBoundingClientRect().width + gap);
+        setWidth = w;
+      };
+      measure();
+      window.addEventListener('resize', measure);
+      window.addEventListener('load', measure);
+      let x = 0, paused = false, last = performance.now();
+      const speed = parseFloat(wrap.getAttribute('data-speed') || '50');
+      wrap.addEventListener('mouseenter', ()=> paused = true);
+      wrap.addEventListener('mouseleave', ()=> paused = false);
+      const step = (now)=>{
+        const dt = Math.min((now - last) / 1000, 0.05); last = now;
+        if(!paused && setWidth > 0){
+          x -= speed * dt;
+          if(-x >= setWidth) x += setWidth;
+          track.style.transform = 'translateX(' + x + 'px)';
+        }
+        requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+
+    /* ---- Hero slider ---- */
+    const slides = qa('[data-hero-slide]');
+    const dots = qa('[data-hero-dot]');
+    let hi = 0, heroTimer = null;
+    const auto = props.heroAutoplay ?? true;
+    const iv = (props.heroInterval ?? 6) * 1000;
+    const showHero = (n)=>{
+      hi = (n + slides.length) % slides.length;
+      slides.forEach((s,i)=> s.style.opacity = i===hi ? '1' : '0');
+      dots.forEach((d,i)=>{
+        d.style.width = i===hi ? '34px' : '10px';
+        d.style.background = i===hi ? '#CDEAC0' : 'rgba(255,255,255,.5)';
+      });
+    };
+    const resetHero = ()=>{
+      if(heroTimer) clearInterval(heroTimer);
+      if(auto && slides.length>1) heroTimer = setInterval(()=>showHero(hi+1), iv);
+    };
+    dots.forEach((d,i)=> d.addEventListener('click', ()=>{ showHero(i); resetHero(); }));
+    showHero(0); resetHero();
+
+    /* ---- Testimonials ---- */
+    const track = q('#ecd-testi-track');
+    const testi = qa('[data-testi]');
+    const tdots = qa('[data-testi-dot]');
+    let ti = 0;
+    const showTesti = (n)=>{
+      ti = (n + testi.length) % testi.length;
+      if(track) track.style.transform = 'translateX(-' + (ti*100) + '%)';
+      tdots.forEach((d,i)=> d.style.background = i===ti ? '#14432A' : '#CDEAC0');
+    };
+    const tp = q('#ecd-testi-prev'), tn = q('#ecd-testi-next');
+    if(tp) tp.addEventListener('click', ()=>showTesti(ti-1));
+    if(tn) tn.addEventListener('click', ()=>showTesti(ti+1));
+    tdots.forEach((d,i)=> d.addEventListener('click', ()=>showTesti(i)));
+    showTesti(0);
+
+    /* ---- Mobile menu ---- */
+    const ham = q('#ecd-ham'), mm = q('#ecd-mobile-menu');
+    const closeMenu = ()=>{ if(mm){ mm.setAttribute('data-open','false'); mm.style.display='none'; } };
+    if(ham && mm){
+      ham.addEventListener('click', ()=>{
+        const open = mm.getAttribute('data-open') === 'true';
+        mm.setAttribute('data-open', open ? 'false' : 'true');
+        mm.style.display = open ? 'none' : 'flex';
+      });
+    }
+
+    /* ---- Smooth-scroll nav ---- */
+    qa('[data-nav]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('data-nav');
+        const t = document.getElementById(id);
+        if(t){
+          e.preventDefault();
+          const y = t.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({top:y, behavior:'smooth'});
+        }
+        closeMenu();
+      });
+    });
+
+    /* ---- Back to top ---- */
+    if(btt) btt.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+    /* ---- Contact number props ---- */
+    const phone = (props.phoneNumber ?? '+504 9454-4389');
+    const telHref = 'tel:' + phone.replace(/[^0-9+]/g,'');
+    ['#ecd-call','#ecd-phone'].forEach(id=>{ const el=q(id); if(el) el.setAttribute('href', telHref); });
+    const wa = q('#ecd-wa'); if(wa) wa.setAttribute('href', 'https://wa.me/' + (props.whatsappNumber ?? '50494544389'));
+
+    /* ---- Forms: envío real vía Web3Forms, con fallback a mailto ---- */
+    qa('form[data-ecd-form]').forEach(function(f){
+      f.addEventListener('submit', function(e){
+        e.preventDefault();
+        var b = f.querySelector('[data-submit]');
+        var original = b ? b.innerHTML : '';
+        var isNews = f.getAttribute('data-form') === 'newsletter';
+        var subject = isNews ? 'Nueva suscripción — Ecodistrito' : 'Nueva consulta — Ecodistrito';
+        var fd = new FormData(f);
+        function restore(){ if(b){ b.disabled=false; b.innerHTML=original; b.style.background=''; b.style.color=''; } }
+        function ok(){
+          if(b){ b.innerHTML='¡Gracias! Te contactaremos pronto'; b.style.background='#1B5E3F'; b.style.color='#ffffff'; }
+          if(typeof f.reset==='function') f.reset();
+          setTimeout(restore, 6000);
+        }
+        function mailtoFallback(){
+          var lines=[];
+          fd.forEach(function(v,k){
+            if(['access_key','subject','from_name','botcheck'].indexOf(k)===-1 && String(v).trim()) lines.push(k+': '+v);
+          });
+          window.location.href='mailto:info@ecoproyectoshn.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
+          restore();
+        }
+        if(b){ b.disabled=true; b.innerHTML='Enviando…'; }
+        if(WEB3FORMS_KEY){
+          fd.append('access_key', WEB3FORMS_KEY);
+          fd.append('subject', subject);
+          fd.append('from_name', 'Ecodistrito Web');
+          fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Accept':'application/json'}, body:fd})
+            .then(function(r){ return r.json(); })
+            .then(function(d){ if(d && d.success){ ok(); } else { mailtoFallback(); } })
+            .catch(mailtoFallback);
+        } else {
+          mailtoFallback();
+        }
+      });
+    });
+
+    /* ---- Hover shim (replaces Claude Design style-hover runtime) ---- */
+    document.querySelectorAll('[style-hover]').forEach(function(el){
+      var hov = el.getAttribute('style-hover');
+      el.addEventListener('mouseenter', function(){
+        el.setAttribute('data-base-style', el.getAttribute('style') || '');
+        el.style.cssText = (el.getAttribute('data-base-style') || '') + ';' + hov;
+      });
+      el.addEventListener('mouseleave', function(){
+        el.style.cssText = el.getAttribute('data-base-style') || '';
+      });
+    });
+  }
+  if(document.readyState !== 'loading'){ init(); }
+  else { document.addEventListener('DOMContentLoaded', init); }
+})();
+</script>
+</body>
+</html>
