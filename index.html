@@ -40,6 +40,7 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
 @media (max-width:860px){[data-ecd="serv-grid"]{grid-template-columns:1fr !important;}}
 [data-marquee]:hover [data-marquee-track]{animation-play-state:paused;}
 </style>
+<style>#contacto select option{color:#14261C;background:#ffffff}</style>
 </head>
 <body>
 <div style="overflow-x:hidden;position:relative;">
@@ -148,12 +149,18 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
     <div id="contacto" data-reveal="" style="opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;background:#14432A;border-radius:26px;padding:clamp(26px,3vw,42px);position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(20,67,42,.28);">
       
       <h3 style="font-family:'Sora',sans-serif;font-weight:700;color:#ffffff;font-size:clamp(22px,2.4vw,29px);margin:0;position:relative;">Agenda una consulta gratis</h3>
-      <p style="color:rgba(205,234,192,.85);font-size:14.5px;line-height:1.6;margin:10px 0 26px;position:relative;">Cuéntanos qué buscas y te contactamos. Los campos marcados con * son obligatorios.</p>
+      <p style="color:rgba(205,234,192,.85);font-size:14.5px;line-height:1.6;margin:10px 0 26px;position:relative;">Cuéntanos qué buscas y te contactamos por WhatsApp. Los campos marcados con * son obligatorios.</p>
       <form data-ecd-form="" data-form="contacto" style="display:flex;flex-direction:column;gap:14px;position:relative;">
         <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
         <input type="text" name="nombre" required="" placeholder="Nombre *" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
         <input type="email" name="email" required="" placeholder="Email *" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
-        <input type="tel" name="telefono" placeholder="Teléfono" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
+        <input type="tel" name="telefono" required="" placeholder="Teléfono / WhatsApp *" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:#ffffff;font-size:15px;outline:none;">
+        <select name="busca" required="" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:rgba(255,255,255,.75);font-size:14.5px;outline:none;appearance:none;">
+          <option value="" disabled="" selected="">¿Qué busca? *</option>
+          <option>Comprar para vivir</option>
+          <option>Comprar para invertir</option>
+          <option>Rentar</option>
+        </select>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;">
           <select name="tipo_condominio" style="width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(205,234,192,.25);border-radius:12px;padding:15px 16px;color:rgba(255,255,255,.75);font-size:14.5px;outline:none;appearance:none;">
             <option>Tipo de condominio</option>
