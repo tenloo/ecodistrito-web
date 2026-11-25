@@ -94,7 +94,7 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
         <h1 style="font-family:'Sora',sans-serif;font-weight:700;color:#ffffff;font-size:clamp(38px,6.2vw,76px);line-height:1.04;letter-spacing:-.025em;margin:24px 0 0;text-wrap:balance;">Compra y personaliza tu estilo de vida</h1>
         <p style="color:rgba(255,255,255,.86);font-size:clamp(16px,1.5vw,19px);line-height:1.65;margin:22px 0 0;max-width:560px;">Los únicos condominios que personalizas a tu estilo, en la mejor zona de Tegucigalpa.</p>
         <div data-ecd="hero-btns" style="display:flex;align-items:center;gap:14px;margin-top:36px;flex-wrap:wrap;">
-          <a data-nav="contacto" href="#contacto" style="display:inline-flex;align-items:center;gap:10px;background:#14432A;color:#ffffff;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.18);transition:transform .25s ease,background .25s ease,box-shadow .25s ease;" style-hover="background:#1B5E3F;transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.32);">
+          <a data-agenda="" href="https://scheduling.kommo.com/37203339" style="display:inline-flex;align-items:center;gap:10px;background:#14432A;color:#ffffff;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.18);transition:transform .25s ease,background .25s ease,box-shadow .25s ease;" style-hover="background:#1B5E3F;transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.32);">
             Agenda una cita
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
           </a>
@@ -411,7 +411,7 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
       <h2 style="font-family:'Sora',sans-serif;font-weight:700;color:#ffffff;font-size:clamp(28px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin:20px 0 0;text-wrap:balance;">Construyamos juntos tu nuevo hogar</h2>
       <p style="color:rgba(255,255,255,.85);font-size:16px;line-height:1.7;margin:16px 0 32px;">Agenda una cita y descubre cómo personalizar tu condominio en Ecodistrito, en la mejor zona de Tegucigalpa.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a data-nav="contacto" href="#contacto" style="display:inline-flex;align-items:center;gap:10px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;transition:transform .25s ease,background .25s ease;" style-hover="background:#bfe0af;transform:translateY(-2px);">Agenda una cita</a>
+        <a data-agenda="" href="https://scheduling.kommo.com/37203339" style="display:inline-flex;align-items:center;gap:10px;background:#CDEAC0;color:#14432A;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;transition:transform .25s ease,background .25s ease;" style-hover="background:#bfe0af;transform:translateY(-2px);">Agenda una cita</a>
         <a data-nav="contacto" href="#contacto" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#ffffff;font-weight:600;font-size:15px;padding:16px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.4);transition:background .25s ease;" style-hover="background:rgba(255,255,255,.12);">Solicita información</a>
       </div>
     </div>
@@ -510,14 +510,26 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
 </div>
 
 </div>
+<!-- ============ AGENDA DE VISITAS (Kommo) ============ -->
+<div id="ecd-agenda" aria-hidden="true" style="position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;background:rgba(12,20,16,.62);backdrop-filter:blur(6px);padding:clamp(0px,3vw,32px);opacity:0;transition:opacity .25s ease;">
+  <div style="position:relative;width:100%;max-width:980px;height:min(820px,100%);background:#ffffff;border-radius:clamp(0px,2vw,22px);overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.35);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid #eceae2;">
+      <div>
+        <div style="font-family:'Sora',sans-serif;font-weight:700;color:#14261C;font-size:18px;">Agenda tu visita a Ecodistrito</div>
+        <div style="color:#5B6B60;font-size:13px;margin-top:2px;">Elige el día y la hora. Te confirmamos por correo y WhatsApp.</div>
+      </div>
+      <button id="ecd-agenda-close" aria-label="Cerrar" style="width:40px;height:40px;border-radius:50%;border:1px solid #e2e0d7;background:#F4F3EE;color:#14261C;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:0 0 auto;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <iframe id="ecd-agenda-frame" title="Agenda de visitas Ecodistrito" data-src="https://scheduling.kommo.com/37203339" style="flex:1;width:100%;border:0;background:#ffffff;"></iframe>
+  </div>
+</div>
+
 <script>
 (function(){
   var props = { heroAutoplay:true, heroInterval:6, phoneNumber:'+504 9454-4389', whatsappNumber:'50494544389' };
-  /* CORREO DE CONTACTO: para que los formularios lleguen directo a tu bandeja,
-     crea una Access Key gratis en https://web3forms.com usando info@ecoproyectoshn.com
-     y pégala entre las comillas de abajo. Mientras quede vacía, el formulario abrirá
-     el correo del visitante ya dirigido a info@ecoproyectoshn.com. */
-  var WEB3FORMS_KEY = '';
+  /* Los formularios crean el cliente directo en Kommo (embudo «Ventas Ecodistrito»)
+     a través del flujo de n8n «Ecodistrito · Formulario web → Kommo». */
+  var KOMMO_WEBHOOK = 'https://n8n.tenloo.com/webhook/ecodistrito-web-e41d7250458b';
   function init(){
 
     const q = (s)=>document.querySelector(s);
@@ -694,7 +706,29 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
     ['#ecd-call','#ecd-phone'].forEach(id=>{ const el=q(id); if(el) el.setAttribute('href', telHref); });
     const wa = q('#ecd-wa'); if(wa) wa.setAttribute('href', 'https://wa.me/' + (props.whatsappNumber ?? '50494544389'));
 
-    /* ---- Forms: envío real vía Web3Forms, con fallback a mailto ---- */
+    /* ---- Agenda de visitas (página de reservas de Kommo en una ventana) ---- */
+    (function(){
+      var m = q('#ecd-agenda'), fr = q('#ecd-agenda-frame'), cl = q('#ecd-agenda-close');
+      if(!m || !fr) return;
+      function open(e){
+        if(e) e.preventDefault();
+        if(!fr.getAttribute('src')) fr.setAttribute('src', fr.getAttribute('data-src'));
+        m.style.display='flex'; m.setAttribute('aria-hidden','false');
+        requestAnimationFrame(function(){ m.style.opacity='1'; });
+        document.body.style.overflow='hidden';
+      }
+      function close(){
+        m.style.opacity='0'; m.setAttribute('aria-hidden','true');
+        document.body.style.overflow='';
+        setTimeout(function(){ m.style.display='none'; }, 250);
+      }
+      qa('[data-agenda]').forEach(function(a){ a.addEventListener('click', open); });
+      if(cl) cl.addEventListener('click', close);
+      m.addEventListener('click', function(e){ if(e.target === m) close(); });
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape' && m.style.display==='flex') close(); });
+    })();
+
+    /* ---- Forms: van directo a Kommo (n8n), con fallback a mailto ---- */
     qa('form[data-ecd-form]').forEach(function(f){
       f.addEventListener('submit', function(e){
         e.preventDefault();
@@ -718,17 +752,14 @@ input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6);}
           restore();
         }
         if(b){ b.disabled=true; b.innerHTML='Enviando…'; }
-        if(WEB3FORMS_KEY){
-          fd.append('access_key', WEB3FORMS_KEY);
-          fd.append('subject', subject);
-          fd.append('from_name', 'Ecodistrito Web');
-          fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Accept':'application/json'}, body:fd})
-            .then(function(r){ return r.json(); })
-            .then(function(d){ if(d && d.success){ ok(); } else { mailtoFallback(); } })
-            .catch(mailtoFallback);
-        } else {
-          mailtoFallback();
-        }
+        var data = { form: f.getAttribute('data-form') || 'contacto', pagina: location.href };
+        fd.forEach(function(v,k){ data[k] = String(v); });
+        try { var sp = new URLSearchParams(location.search);
+          ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){ if(sp.get(k)) data[k]=sp.get(k); }); } catch(_){}
+        fetch(KOMMO_WEBHOOK, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)})
+          .then(function(r){ return r.json(); })
+          .then(function(d){ if(d && d.ok){ ok(); } else { mailtoFallback(); } })
+          .catch(mailtoFallback);
       });
     });
 
